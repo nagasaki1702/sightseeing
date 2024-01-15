@@ -1,0 +1,416 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Roboto:wght@100;400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&family=Zen+Kurenaido&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css");
+:root {
+    --color-body: #0c0606;
+    --color-heading: #0c0606;
+    --color-base: #C6CF9B;
+    --color-base2: #F6ECA9;
+    --color-brand: #11235A;
+    --color-brand2: #596FB7;
+    --shadow:#0c0606;
+    --border-radius: 4px;
+    --font-base:"Zen Kurenaido"
+}
+
+.logo {
+    width: 150px;
+    height: 50px;
+}
+
+body{
+    font-family: var(--font-base), sans-serif;
+    color: var(--color-body);
+    line-height: 1.7;
+}
+
+h1,h2,h3,h4,h5,h5{
+    font-family: var(--font-base), sans-serif;
+    font-weight: 400;
+    color: var(--color-body);
+}
+
+a{
+    color: var(--color-body);
+    text-decoration: none;
+    transition: all 0.4s linear;
+    font-weight: 600;
+}
+
+a:hover{
+    color: var(--color-brand);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section-intro{
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.section-intro p{
+    max-width: 500px;
+    margin: auto;
+}
+
+.shadow-on-hover{
+    transition: all 0.4s;
+}
+
+.shadow-on-hover:hover{
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+a.custom-link{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* Btn */
+.btn{
+    border-radius: 0;
+    padding: 14px 38px;
+}
+
+.btn-brand{
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-brand:hover{
+    background-color: var(--color-base2);
+    border-color: var(--color-base2);
+}
+
+.bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+/* card：TODO:カードのデザイン：今回新たに追加するところ！ */
+.custom-card{
+    transition: all 0.4s ease;
+    background-color: #fff;
+}
+
+.custom-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Slider */
+.slide-1{
+    background: linear-gradient(rgb(12, 6, 6, 0.6), rgb(12, 6, 6, 0.6)), url(../img/cover-1.png);
+    background-attachment: fixed;
+}
+
+.slide-2{
+    background: linear-gradient(rgb(12, 6, 6, 0.6), rgb(12, 6, 6, 0.6)), url(../img/cover-2.png);
+    background-attachment: fixed;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    background-color: var(--color-body);
+    width: 40px;
+    height: 70px;
+    margin: auto;
+}
+
+#heroSlider h6::after,
+#heroSlider h6::before{
+    content: " ";
+    width: 30px;
+    height: 1px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 5px;
+    vertical-align: auto;
+}
+
+/* Service TODO:今回新たに追加するところ！ */
+.service{
+    padding: 44px 24px;
+    text-align: center;
+}
+
+.icon-box{
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-brand);
+    color: #fff;
+    border-radius: var(--border-radius);
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.service h5{
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+
+/* CTA TODO:間に入る、黒いバー的なやつ。*/
+#cta{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: linear-gradient(rgb(12, 6, 6, 0.6), rgb(12, 6, 6, 0.6)), url(../img/cover-8.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#cta h1,
+#cta p{
+    color: #fff;
+}
+
+/* About */
+#about .divider{
+    width: 60px;
+    height: 2px;
+    display: block;
+    background-color: var(--color-brand);
+}
+
+/* Intro text */
+.intro {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.intro p{
+    max-width: 500px;
+    margin: 16px auto 0 auto;
+}
+
+/* Tab */
+#items .nav-link{
+    margin: 10px;
+    border-radius: 0;
+    padding: 14px 38px;
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: #fff;
+    font-weight: 600;
+}
+
+#items .nav-link:hover{
+    background-color: var(--color-base2);
+    border-color: var(--color-base2);
+    color: var(--color-body);
+
+}
+
+.stars{
+    color: var(--color-base);
+}
+
+/* Features */
+#features{
+    background: linear-gradient(rgb(12, 6, 6, 0.6), rgb(12, 6, 6, 0.6)), url(../img/cover-7.png);
+    background-attachment: fixed;
+}
+
+.feature{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.feature .feature-icon{
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-brand);
+    color: #fff;
+    font-size: 30px;
+    display: inline-grid;
+    align-content: center;
+    text-align: center;    
+}
+
+/* Team TODO:チームメンバー新しく作成する*/
+.team-member .team-member-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member-img img{
+    transition: all 0.4s ease;
+}
+
+.team-member-img:hover img{
+    transform : scale(1.1);
+}
+
+.social-links{
+    display: flex;
+}
+
+.social-links a{
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    color: var(--color-brand);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+    margin: 4px;
+}
+
+.social-links a:hover{
+    background-color: var(--color-brand);
+    color: #fff;
+}
+
+.team-member .social-links{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+}
+
+.team-member:hover .social-links{
+    bottom: 20px;
+    opacity: 1;
+}
+
+/* Reviews */
+#reviews{
+    background: linear-gradient(rgb(12, 6, 6, 0.6), rgb(12, 6, 6, 0.6)), url(../img/cover-6.png);
+    background-attachment: fixed;
+}
+
+.review img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.review .heart-icon{
+    font-size: 75px;
+    color: var(--color-base);
+    line-height: 1;
+}
+
+.review .stars{
+    color: var(--color-base);
+}
+
+.carousel-indicators {
+    margin-bottom: -3rem;
+}
+
+/* Reservation */
+#reservation .form-control {
+    border-radius: 0;
+
+}
+
+#reservation .form-control:focus {
+    box-shadow: none;    
+    border-color: var(--color-brand);
+}
+
+#reservation input.form-control{
+    height: 47px;
+}
+
+/* Insta Posts */
+.insta-posts{
+    position: relative;
+    overflow: hidden;
+}
+
+.insta-posts .insta-btn{
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 28px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.insta-posts img{
+    transition: all 0.4s;
+}
+
+.insta-posts:hover img{
+    transform: scale(1.1);
+}
+
+.insta-posts:hover .insta-btn{
+    opacity: 1;
+}
+
+/* Blog posts */
+.blog-post img{
+    width: 50%;
+    object-fit: cover;
+}
+
+@media (max-width:768px){
+    .blog-post{
+        flex-direction: column;
+    }
+    .blog-post img{
+        width: 100%;
+    }
+}
+
+/* Footer */
+footer{
+    background: linear-gradient(rgb(12, 6, 6, 0.7), rgb(12, 6, 6, 0.7)), url(../img/cover-3.png);
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+.footer-top{
+    margin-bottom: 30px;
+}
+
+footer .logo{
+    max-width: 150px;
+    height: auto;
+    justify-content: left;
+    color: #000;
+}
+
+footer a{
+    font-weight: normal;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+footer p,
+footer a{
+    color: rgba(255, 249, 249, 0.622);
+}
+
+.footer-bottom{
+    padding-top: 30px;
+    border-top: 1px solid rgba(214, 204, 185, 0.4);
+}
